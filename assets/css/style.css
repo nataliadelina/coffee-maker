@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* MACHINE */
+.machine {
+    width: 70vw;
+    height: 98vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(23, 23, 29);
+    background: rgb(37,33,42);
+    background: radial-gradient(circle, rgba(37,33,42,1) 0%, rgba(4,2,8,1) 100%); 
+}
+
+/* DISPLAY */
+.machine-display {
+    width: 65vw;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 2px solid #585858;
+    background: rgb(238,238,242);
+    background: radial-gradient(circle, rgb(37, 37, 37) 0%, rgb(59, 59, 59) 100%);
+}
+.display-imgs {
+    display: flex;
+    justify-content: center;
+}
+.display-imgs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+}
+.selection-txt {
+    font-size: 0.7em;
+    text-align: center;
+    color: rgb(122, 122, 121);
+}
+.display-imgs img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* LOGO PART */
+.machine-start {
+    width: 50vw;
+    height: 5rem;
+    margin-top: 1rem;
+    background-color: rgb(94, 94, 110);
+    background: rgb(238,238,242);
+    background: linear-gradient(336deg, rgb(93, 93, 124) 0%, rgba(146,145,147,1) 0%, rgba(43,41,40,1) 100%); 
+    text-align: center;
+    border-radius: 5px;
+}
+.machine-start h2 {
+    color: rgb(179, 177, 175);
+}
+.btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    /* clip-path: circle(50% at 50% 50%); */
+}
+
+/* TUBES */
+.tubes {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tube {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(179, 179, 194);
+    background: rgb(238,238,242);
+    background: linear-gradient(336deg, rgba(238,238,242,1) 0%, rgba(146,145,147,1) 0%, rgba(43,41,40,1) 100%); 
+}
+
+/* DROPS */
+.drops {
+    width: 20vw;
+    height: 23vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.drop {
+    width: 1.5rem;
+    height: 5.5rem;
+    background-color: rgb(155, 155, 165);
+    /* animation: 1s drop ease; */
+}
+
+
+/* CUP */
+.cup {
+    width: 15vw;
+    height: 11rem;
+    border-radius: 5px;
+    background-color: #ffebcd;
+    transform: rotate(180deg);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    background: rgb(242,233,220);
+    background: radial-gradient(circle, rgba(242,233,220,0.4195144610578606) 0%, rgba(255,235,205,0.4055088588169643) 100%); 
+}
+
+
+/* keyframe animation */
+/* drop */
+@keyframes drop {
+    0% {
+        top: -50%
+    }
+    100% {
+      top: 110%
+    }
+}
+ 
