@@ -39,7 +39,7 @@
         <!-- logo part -->
         <div class="machine-start">
             <h2>coffee maker</h2>
-            <button class="btn">start</button>
+            <button class="btn" id="btn">start</button>
         </div>
         <div class="tubes">
             <div class="tube"></div>
@@ -50,12 +50,25 @@
             <div class="drop drop-right"></div>
             <div class="drop drop-left"></div>
         </div>
+
+        <!-- steam -->
+        <div class="steam" id="steam-container">
+            <!-- <video autoplay muted loop id="steam-video">
+                <source src="./assets/steam-and-sound.mp4" type="video/mp4">
+            </video> -->
+        </div>
+
+        <!-- audio -->
+        <audio id="audio" src="./assets/sound.mp3"></audio>
+
         <!-- cup -->
         <div class="cup"></div>
 
         <!-- bottom -->
         <div class="machine-bottom"></div>
     </div>
+
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
