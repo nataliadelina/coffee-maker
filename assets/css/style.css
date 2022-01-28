@@ -113,6 +113,13 @@
 }
 
 
+/* STEAM */
+.steam-video {
+    visibility: hidden;
+    
+}
+
+
 /* keyframe animation */
 /* drop */
 @keyframes drop {
